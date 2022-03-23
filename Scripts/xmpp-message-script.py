@@ -1,4 +1,4 @@
-#!d:\programing\python\zion\mqtt_jabber\scripts\python.exe
+#!D:\Programing\main_project\web\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'xmpppy==0.7.0','console_scripts','xmpp-message'
 import re
 import sys

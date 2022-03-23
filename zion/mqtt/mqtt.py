@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqtt
 import zion.jabber.myJabber as myJabber
 import sys, xmpp
-import zion.jabber.setting as set
+import zion.setting as set
 
 client = mqtt.Client()
 
@@ -32,9 +32,8 @@ def on_message(client, userdata, msg):
 
 
 
-def publish(msg):
-   print('pub')
-   client.publish(set.mqtt_topic, msg)
+def publish(topic,msg):
+   client.publish(topic, msg)
    #client.publish(set.mqtt_Gateway, msg)
 
 

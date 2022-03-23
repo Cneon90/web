@@ -1,5 +1,5 @@
 import telebot
-import zion.telegramm.mqtt as mqtt
+import zion.mqtt.mqtt as mqtt
 
 bot = telebot.TeleBot('955425525:AAEENrexVMjdX44VHH7xfQ4FFMeByOb9lsQ');
 
@@ -17,7 +17,7 @@ def send_text(message):
     if message.text == 'hi':
         print('HELLO')
 
-    mqtt.publish(message.text)
+    mqtt.publish('/telegramm',message.text)
 
 
 def start():

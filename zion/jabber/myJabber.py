@@ -1,7 +1,7 @@
 import xmpp
 from zion.jabber.jabber_bot import JabberBot
-import zion.jabber.mqtt as mqtt
-import zion.jabber.setting as set
+import zion.mqtt.mqtt as mqtt
+import zion.setting as set
 
 
 config = set.jab_config
@@ -14,7 +14,7 @@ def message_handler(conn, mess):
     reply = text
     conn.send(xmpp.Message(mess.getFrom(), reply))
     print(text)
-    mqtt.publish(str(text))
+    mqtt.publish('/jabber',str(text))
 
 
 def start():

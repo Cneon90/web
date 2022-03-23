@@ -1,4 +1,4 @@
-#!D:\Programing\python\Zion\web\Scripts\python.exe
+#!D:\Programing\main_project\web\Scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
